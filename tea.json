@@ -1,0 +1,92 @@
+[
+  {
+      "id": 1,
+      "name": "Earl Grey Tea",
+      "price": 2.99,
+      "category": "Black Tea",
+      "description": "Aromatic black tea flavored with bergamot orange.",
+      "stock": 50,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 2,
+      "name": "Green Tea",
+      "price": 3.49,
+      "category": "Green Tea",
+      "description": "Refreshing and healthy green tea.",
+      "stock": 30,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 3,
+      "name": "Chamomile Tea",
+      "price": 2.79,
+      "category": "Herbal Tea",
+      "description": "Calming tea made from chamomile flowers.",
+      "stock": 40,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 4,
+      "name": "Peppermint Tea",
+      "price": 3.29,
+      "category": "Herbal Tea",
+      "description": "Invigorating peppermint tea with a fresh taste.",
+      "stock": 25,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 5,
+      "name": "English Breakfast Tea",
+      "price": 2.89,
+      "category": "Black Tea",
+      "description": "Rich and robust black tea, perfect for mornings.",
+      "stock": 60,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 6,
+      "name": "Chai Tea",
+      "price": 3.59,
+      "category": "Spiced Tea",
+      "description": "A blend of black tea with warm spices.",
+      "stock": 35,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 7,
+      "name": "Jasmine Tea",
+      "price": 3.99,
+      "category": "Green Tea",
+      "description": "Delicate green tea infused with jasmine flowers.",
+      "stock": 20,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 8,
+      "name": "Rooibos Tea",
+      "price": 4.49,
+      "category": "Herbal Tea",
+      "description": "Naturally caffeine-free herbal tea from South Africa.",
+      "stock": 30,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 9,
+      "name": "Oolong Tea",
+      "price": 4.29,
+      "category": "Oolong Tea",
+      "description": "Traditional Chinese tea, semi-oxidized for unique flavor.",
+      "stock": 15,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  },
+  {
+      "id": 10,
+      "name": "Lemon Ginger Tea",
+      "price": 3.69,
+      "category": "Herbal Tea",
+      "description": "Zesty lemon and warming ginger, perfect for cold days.",
+      "stock": 40,
+      "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/eaf502f4-4553-47ac-847c-62f94874dc43/dc6a04bb-c1fa-4eb1-a76c-a61db4d147fb_306802002.jpeg?h=540&w=540"
+  }
+]

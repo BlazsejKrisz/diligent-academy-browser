@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The application</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/app.js"></script>
-</head>
-<body>
-    <h1>
-        The application
-    </h1>
-</body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav id="navbar">
+          <div id="nav-list">
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="/">CART</a></li>
+              <li><a href="/">CHECKOUT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section id="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">DiligenTEA</h1>
+          <p class="hero-description">
+            Browse all kinds of tea you can imagine, from all around the world!
+          </p>
+          <button class="explore-btn">EXPLORE MORE</button>
+        </div>
+      </section>
+
+      <section id="products-section">
+        <h2 class="product-title">PRODUCTS</h2>
+        <div id="products-container" class="products-container"></div>
+      </section>
+    </main>
+  </body>
 </html>
