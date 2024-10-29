@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +53,14 @@ a {
   color: black;
 }
 
+li {
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
 ul {
   list-style-type: none;
 }
@@ -56,7 +84,7 @@ ul {
     rgba(255, 134, 0, 1) 100%
   );
   position: sticky;
-  top: 0;
+  top: -20vh;
   color: black;
   display: flex;
   flex-direction: column;
@@ -84,8 +112,16 @@ ul {
   margin-top: 10px;
   padding: 0.6rem;
   border: white;
-
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
+}
+
+#select-category{
+  cursor: pointer;
+}
+
+.explore-btn:hover{
+  transform: scale(1.1);
 }
 
 .product-title {
