@@ -2,6 +2,7 @@ import express from "express";
 import { readFileSync, writeFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 const port = 3000;
@@ -16,8 +17,15 @@ const __dirname = path.dirname(__filename);
 app.use(express.static("public"))
 app.use("/pub", express.static(path.join(__dirname, ".", "public")));
 
+// ROUTES FOR PAGES
+
 app.get("/home", (req, res) => {
   const indexPath = path.join(__dirname, ".", "public", "index.html");
+  res.sendFile(indexPath);
+});
+
+app.get("/cart", (req, res) => {
+  const indexPath = path.join(__dirname, ".", "public", "cartpage.html");
   res.sendFile(indexPath);
 });
 
@@ -25,6 +33,8 @@ app.get("/login", (req, res) => {
   const indexPath = path.join(__dirname, ".", "public", "login.html");
   res.sendFile(indexPath);
 });
+
+// ENDPOINTS FOR PRODUCTS
 
 app.get("/products", (req, res) => {
   res.send(products);
@@ -58,10 +68,12 @@ app.get("/search/category", (req, res) => {
     res.send(searchedProducts)
   });
 
+// LOGIN PAGE
+
 app.post("/register", (req, res) => {
   const newUser = req.body;
   const accounts = JSON.parse(readFileSync("accounts.json", "utf-8"));
- 
+  newUser.id = uuidv4();
   writeFileSync('accounts.json', JSON.stringify([...accounts, newUser]))
 })
 
