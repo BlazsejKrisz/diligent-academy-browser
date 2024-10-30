@@ -77,7 +77,7 @@ function calculateTotal() {
     cartItems.forEach(item => {
         const itemPrice = parseFloat(item.querySelector('.item-price').textContent);
         const itemQuantity = parseInt(item.querySelector('.quantity-value').textContent);
-        totalAmount += price * quantity;
+        totalAmount += itemPrice * itemQuantity;
     });
 
     document.getElementById('total-amount').textContent = totalAmount.toFixed(2);
