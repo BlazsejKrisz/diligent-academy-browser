@@ -1,0 +1,108 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    background-color: bisque;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-container{
+    color: brown;
+}
+
+.cart-container {
+    min-width: 90vh;
+    min-height: 20vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item {
+    min-width: 60vh;
+    min-height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; 
+    margin: 10px 0; 
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.item-image {
+    max-width: 15%;
+    height: auto;
+    margin-left: 2vh;
+    border-radius: 20px;
+
+}
+
+.item-name {
+    width: 20vh;
+    margin-left: 2vh;
+    margin-right: 5vh;
+}
+
+.item-price {
+    min-height: 5vh;
+    min-width: 10vh;
+
+    background-color:rgb(255, 178, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.remove-item-button {
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+
+.cart-summary{
+    display: flex;
+    flex-direction: column;
+}
+.checkout-button{
+    margin-bottom: 2vh;
+}
+
+button{
+    background-color: rgb(255, 156, 63);
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
