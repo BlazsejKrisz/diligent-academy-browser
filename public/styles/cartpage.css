@@ -16,11 +16,9 @@ html {
     display: none;
 }
 
-.cart-container{
-    color: brown;
-}
 
 .cart-container {
+    color: brown;
     min-width: 90vh;
     min-height: 20vh;
     border-radius: 20px;
@@ -77,7 +75,6 @@ hr {
 .item-price {
     min-height: 5vh;
     min-width: 10vh;
-
     background-color:rgb(255, 178, 77);
     display: flex;
     align-items: center;
@@ -94,6 +91,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
 .checkout-button{
     margin-bottom: 2vh;
 }
