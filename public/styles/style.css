@@ -31,12 +31,18 @@ html.lenis, html.lenis body {
 /* NAVBAR ----------------------*/
 
 #navbar {
+  width: 100%;
   height: 3rem;
-  background-color: white;
+  background-color: rgba(255, 123, 0, 0.368);
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
+  position: fixed;
+  top: 0px;
+  backdrop-filter: blur(10px) invert(40%);
+ 
+  z-index: 99999;
 }
 
 #navbar ul {
@@ -46,6 +52,7 @@ html.lenis, html.lenis body {
   gap: 5rem;
   align-items: center;
   align-content: center;
+
 }
 
 a {
@@ -84,7 +91,7 @@ ul {
     rgba(255, 134, 0, 1) 100%
   );
   position: sticky;
-  top: -20vh;
+  top: -10vh;
   color: black;
   display: flex;
   flex-direction: column;
