@@ -1,15 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 body,
 html {
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     color: brown;
     background-color: bisque;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hidden {
@@ -19,7 +37,7 @@ html {
 
 .cart-container {
     color: brown;
-    min-width: 90vh;
+    width: 80vw;
     min-height: 20vh;
     border-radius: 20px;
     display: flex;
@@ -104,3 +122,53 @@ button{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: brown;
 }
+
+/* NAVBAR ----------------------*/
+
+#navbar {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(255, 123, 0, 0.368);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: fixed;
+    top: 0px;
+    backdrop-filter: blur(10px) invert(40%);
+    font-size: 18px;
+    z-index: 99999;
+  }
+  
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    align-content: center;
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  li:hover {
+    transform: scale(1.2);
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #nav-list {
+      display: none;
+    }
+  }

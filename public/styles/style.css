@@ -41,7 +41,7 @@ html.lenis, html.lenis body {
   position: fixed;
   top: 0px;
   backdrop-filter: blur(10px) invert(40%);
- 
+  font-size: 18px;
   z-index: 99999;
 }
 
