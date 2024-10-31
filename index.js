@@ -36,9 +36,15 @@ app.get("/login", (req, res) => {
 
 // ENDPOINTS FOR PRODUCTS
 
-app.get("/products", (req, res) => {
-  res.send(products);
+app.get("/products/:id", (req, res) => {
+  const product = products.find((p) => p.id === req.params.id);
+  if (product) {
+    res.json(product);
+  } else {
+    res.status(404).send("Product not found");
+  }
 });
+
 
 app.get("/search", (req, res) => {
   const searchInput = req.query.searchquery;

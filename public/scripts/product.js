@@ -22,4 +22,6 @@ const main = () => {
         throw new Error('No product-countainer found')
     }
 
+    const cartButton = document.getElementById('cart-button')
+
 }
