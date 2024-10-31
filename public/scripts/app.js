@@ -31,6 +31,10 @@ function createProduct(product) {
   price.innerHTML = `${product.price}`;
   description.innerHTML = `${product.description}`;
 
+  div.addEventListener("click", () => {
+    window.location.href = `/product/${product.id}`;
+  });
+
   div.classList.add("product");
   div.appendChild(name);
   div.appendChild(image);
