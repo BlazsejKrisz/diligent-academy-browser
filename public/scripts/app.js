@@ -14,6 +14,7 @@ function loadProducts() {
       products.map((product) => {
         productDiv.appendChild(createProduct(product));
       });
+
       division.appendChild(productDiv);
     })
     .catch((error) => console.log(error));
