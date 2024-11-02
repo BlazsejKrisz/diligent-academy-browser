@@ -32,8 +32,10 @@ function createProduct(product) {
   description.innerHTML = `${product.description}`;
 
   div.addEventListener("click", () => {
-    window.location.href = `/product/${product.id}`;
+    window.location.href = `/product.html?id=${product.id}`;
   });
+  
+  
 
   div.classList.add("product");
   div.appendChild(name);

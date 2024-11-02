@@ -1,8 +1,8 @@
 const fetchProduct = async (productId) => {
   try {
-    const response = await fetch(`/product/${product.id}`);
+    const response = await fetch(`/product/${productId}`);
     if (!response.ok) {
-        throw new Error ('No product found')
+      throw new Error('No product found');
     }
     const data = await response.json();
     return data;
@@ -11,14 +11,41 @@ const fetchProduct = async (productId) => {
   }
 };
 
-const main = async () => {
-const productId = window.location.pathname.split('/').pop()
+const updateCartCount = () => {
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartCountElement = document.getElementById('cart');
+  if (cartCountElement) {
+    cartCountElement.innerText = `Cart (${cartItems.length})`;
+    cartCountElement.addEventListener('click', () => {
+      window.location.href = 'cartpage.html';
+    });
+  }
+};
 
-const product = await fetchProduct(productId)
+const addToCart = (product) => {
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  cartItems.push(product);
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+  updateCartCount();
+  alert(`${product.name} has been added to your cart!`);
+  
+};
+
+const main = async () => {
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get('id');
+  console.log("Extracted product ID:", productId);
+
+  const product = await fetchProduct(productId);
+
+  if (!product) {
+    console.error("Product not found or failed to load.");
+    return;
+  }
 
   const productImg = document.createElement("img");
   productImg.id = "product-img";
-  productImg.src = product.img_url;
+  productImg.src = product.image_url;
 
   const productHeader = document.createElement("h1");
   productHeader.id = "product-header";
@@ -32,7 +59,7 @@ const product = await fetchProduct(productId)
   productDescription.id = "product-description";
   productDescription.innerText = product.description;
 
-  const productContainer = document.getElementsByClassName("product-container");
+  const productContainer = document.querySelector(".product-container");
   if (productContainer) {
     productContainer.append(
       productImg,
@@ -41,10 +68,20 @@ const product = await fetchProduct(productId)
       productDescription
     );
   } else {
-    throw new Error("No product-countainer found");
+    throw new Error("No product-container found");
   }
 
-
-
   const cartButton = document.getElementById("cart-button");
+  if (cartButton) {
+    cartButton.addEventListener("click", () => {
+      console.log("Add to Cart button clicked for product:", product);
+      addToCart(product);
+    });
+  } else {
+    console.error("Cart button not found");
+  }
+
+  updateCartCount();
 };
+
+main();
